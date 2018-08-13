@@ -4461,6 +4461,50 @@ body {
   opacity: 1;
 }
 
+/* line 1, dev/scss/components/_talks.scss */
+.talk {
+  display: flex;
+}
+
+/* line 3, dev/scss/components/_talks.scss */
+.talk__speaker {
+  flex: none;
+  margin-right: 1rem;
+  width: 30%;
+}
+
+/* line 9, dev/scss/components/_talks.scss */
+.talk .user {
+  margin-bottom: 0;
+}
+
+/* line 13, dev/scss/components/_talks.scss */
+.talk p {
+  margin-bottom: 0;
+}
+
+/* line 22, dev/scss/components/_talks.scss */
+.talk-break {
+  background: linear-gradient(rgba(0, 123, 223, 0.9), rgba(0, 123, 223, 0.9)), url(../img/talk-break-presentacion.jpg) center/cover;
+  padding: 1.5rem 2rem;
+  border-radius: .25rem;
+  text-align: right;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Open Sans", "sans-serif";
+}
+
+/* line 32, dev/scss/components/_talks.scss */
+.talk-break.second {
+  background: linear-gradient(rgba(0, 203, 255, 0.9), rgba(0, 203, 255, 0.9)), url(../img/talk-break-coffe-break.jpg) center/cover;
+}
+
+/* line 36, dev/scss/components/_talks.scss */
+.talk-break.third {
+  background: linear-gradient(rgba(255, 60, 50, 0.9), rgba(255, 60, 50, 0.9)), url(../img/talk-break-premiacion.jpg) center/cover;
+}
+
 /* line 1, dev/scss/theme/_theme.scss */
 .diagonal-section {
   position: relative;
@@ -4569,5 +4613,27 @@ body {
   /* line 55, dev/scss/hacks/_hacks.scss */
   .ed-grid {
     width: 1200px;
+  }
+}
+
+/* line 61, dev/scss/hacks/_hacks.scss */
+.main-banner--third {
+  --color: var(--third-color);
+}
+
+/* line 65, dev/scss/hacks/_hacks.scss */
+.main-banner--dark {
+  --color: var(--dark-color);
+}
+
+/* line 70, dev/scss/hacks/_hacks.scss */
+.subtitle.l-block {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 70, dev/scss/hacks/_hacks.scss */
+  .subtitle.l-block {
+    margin-bottom: 2rem;
   }
 }
